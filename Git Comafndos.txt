@@ -6,8 +6,7 @@ arquivo não rastreado - ... - para que se torne rastreável deverá testa-lo e 
 A - Arquivos adicionados ao palco
 M - Arquivos modificados
 D - arquivos excluídos
-
-
+olá
 
 Observação: se você ficar preso na visualização de lista, SHIFT + Gpule para o final da lista e, em seguida, qsaia da visualização.
 */
