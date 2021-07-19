@@ -16,6 +16,15 @@
     <Filter Include="Arquivos de Origem\Avaliacao">
       <UniqueIdentifier>{d5dc73f2-e5e5-4f1f-9bd2-27fe34d3263f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Origem\Atividades">
+      <UniqueIdentifier>{be8f17bd-dad2-4771-8c26-fe5fa5ced31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Atividades\ListaUm">
+      <UniqueIdentifier>{fa5b2f07-d69e-4aca-bba2-f72f1d599daf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Atividades\ListaDois">
+      <UniqueIdentifier>{c5a8d982-214f-41cb-bb58-fd3de4c72f6a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AvaliacaoUmAlgoritm.cpp">
