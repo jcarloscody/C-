@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\AvaliacaoUmAlgoritmoo.cpp">
+    <ClCompile Include="AvaliacaoUmAlgoritm.cpp">
       <Filter>Arquivos de Origem\Avaliacao</Filter>
     </ClCompile>
   </ItemGroup>

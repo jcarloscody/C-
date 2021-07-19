@@ -9,7 +9,7 @@ stringstream buffer;
 using namespace std;
 
 
-int main(){
+int main() {
     
      
 	string nome;
@@ -135,9 +135,9 @@ TerceiraFase - 50 ...
 	
 	
 	while(true){
-		/*cout<<"Digite s para sair ou quaisquer tecla+enter para continuar:\n";
+		/*cout << "Digite s para sair ou quaisquer tecla+enter para continuar:\n";
 		cin>>tecla;*/
-		cout<<"\nDigite o seu Nome ou s para sair: \n";
+		cout << "\nDigite o seu Nome ou s para sair: \n";
 		cin>>nome;
 		
 		if(nome=="s"){
@@ -151,7 +151,7 @@ TerceiraFase - 50 ...
 		
 		
 		
-		/*cout<<"\nDigite o seu Nome: \n";
+		/*cout << "\nDigite o seu Nome: \n";
 		cin>>nome;*/
 		
 		//Verificador IDADE - finalidade: verificar range
