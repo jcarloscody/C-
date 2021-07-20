@@ -28,6 +28,16 @@ int main(){
 		s[i] = 2 + 2 * i;
 
 
+	//SOMA
+	// soma o conteúdo do array a
+	float total=0;
+	for (int i = 0; i < arraySize; i++) {
+		total += a[i];
+	}
+	
+	cout << "total of array elements: " << total << endl;
+
+	
 
 
 
