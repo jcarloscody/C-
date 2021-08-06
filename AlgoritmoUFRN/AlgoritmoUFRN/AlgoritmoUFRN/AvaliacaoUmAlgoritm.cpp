@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 #include <string>
 #include <sstream>
 #include <vector>
@@ -9,7 +9,7 @@ stringstream buffer;
 using namespace std;
 
 
-int main() {
+/*int main() {
 
 
 	string nome;
@@ -28,7 +28,7 @@ int main() {
 
 
 	//VARIÁVEIS JANEIRO
-	int frequenciaGeralJaneiro = 0, masculinoJaneiro = 0, femininoJaneiro = 0, idadePrimeiraFaseJaneiro = 0, idadeSegundaFaseJaneiro = 0, idadeTerceiraFaseJaneiro = 0,
+	/* int frequenciaGeralJaneiro = 0, masculinoJaneiro = 0, femininoJaneiro = 0, idadePrimeiraFaseJaneiro = 0, idadeSegundaFaseJaneiro = 0, idadeTerceiraFaseJaneiro = 0,
 		femininoPrimeiraFaseJaneiro = 0, femininoSegundaFaseJaneiro = 0, femininoTerceiraFaseJaneiro = 0, masculinoPrimeiraFaseJaneiro = 0,
 		masculinoSegundaFaseJaneiro = 0, masculinoTerceiraFaseJaneiro = 0;
 	//VARIÁVEIS FEVEREIRO
@@ -120,7 +120,7 @@ int main() {
 
 	*******************************************************************************/
 
-	cout << "\n\nAlgoritmo desenvolvido por ** JOSUE CARLOS DA SILVA  **";
+	/*cout << "\n\nAlgoritmo desenvolvido por ** JOSUE CARLOS DA SILVA  **";
 
 
 	cout << "\n";
@@ -137,7 +137,7 @@ int main() {
 	while (true) {
 		/*cout<<"Digite s para sair ou quaisquer tecla+enter para continuar:\n";
 		cin>>tecla;*/
-		cout << "\nDigite o seu Nome ou s para sair: \n";
+		/*cout << "\nDigite o seu Nome ou s para sair: \n";
 		cin >> nome;
 
 		if (nome == "s") {
@@ -156,7 +156,7 @@ int main() {
 			cin>>nome;*/
 
 			//Verificador IDADE - finalidade: verificar range
-			while (validadorIdade == 1) {
+			/*while (validadorIdade == 1) {
 				cout << "Digite a sua idade\n";
 				cin >> idade;
 
@@ -1192,3 +1192,4 @@ int main() {
 	system("PAUSE");
 
 }
+*/

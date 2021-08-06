@@ -30,5 +30,8 @@
     <ClCompile Include="AvaliacaoUmAlgoritm.cpp">
       <Filter>Arquivos de Origem\Avaliacao</Filter>
     </ClCompile>
+    <ClCompile Include="AvaliacaoDoisAlgoritm.cpp">
+      <Filter>Arquivos de Origem\Avaliacao</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
