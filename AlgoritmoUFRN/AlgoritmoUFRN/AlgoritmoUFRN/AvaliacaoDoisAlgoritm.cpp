@@ -687,7 +687,5 @@ int main() {
 			}
 		}
 	}
-
 	system("PAUSE");
 }
-
