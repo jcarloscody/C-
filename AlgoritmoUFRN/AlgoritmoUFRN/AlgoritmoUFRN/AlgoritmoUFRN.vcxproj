@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AvaliacaoDoisAlgoritm.cpp" />
+    <ClCompile Include="AvaliacaoTresAlgoritm.cpp" />
     <ClCompile Include="AvaliacaoUmAlgoritm.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -10,7 +10,7 @@ using std::stringstream;
 using namespace std;
 
 
-int main() {
+//int main() {
 	/*AVALIAÇÃO - ANALISE
 	* 
 	* QUESTÃO 1: linhas 42/52.  o id será o campo chave e será produzido autormaticamente pelos indices do array Cliente
@@ -39,7 +39,7 @@ int main() {
 
 
 
-	struct Preferencia {
+	/*struct Preferencia {
 		int id = 0;
 		string cliente;
 		int tipo[3][12];
@@ -48,7 +48,7 @@ int main() {
 
 		1(0)- doce
 		2(1)- frances
-		3(2)- bolachao*/
+		3(2)- bolachao
 	};
 
 	int controleDeGeracaoDeId = 9, pao, mes = -1, quantidade, continuar;
@@ -566,7 +566,7 @@ int main() {
 							cin >> localEscolhaRelatorio;
 						}
 
-						if (localEscolhaRelatorio == 1) {*/
+						if (localEscolhaRelatorio == 1) {
 
 					int qualMes;
 					cout << "Deseja 1-Todos os meses, 2-Um mes especifico\n";
@@ -688,4 +688,4 @@ int main() {
 		}
 	}
 	system("PAUSE");
-}
+}*/
