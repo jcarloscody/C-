@@ -1,2 +1,2 @@
-# C++
-Repositório em Construção.         Aqui estou colocando as minhas anotações da linguagem C++
+# UFRN
+Repositório de atividades e provas de programação
