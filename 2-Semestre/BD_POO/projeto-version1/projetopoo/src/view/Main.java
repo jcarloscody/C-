@@ -8,13 +8,14 @@ import java.util.Scanner;
 
 
 import dominian.Employe;
-import dominian.GeralAbstr;
+import dominian.User;
+import dominian.estruturaHeranca.Comum;
 import dominian.validation.ValidationDoc;
 
 public class Main {
 	static Scanner input = new Scanner(System.in);
 	static List<Employe> lista  = new ArrayList<Employe>();
-	static Employe userAtual = new Employe();
+	static Employe userAtual ;
 	
 	public static void main(String[] args) {
 		Employe e = new Employe("josue",  "admin", "12345678");
@@ -37,6 +38,7 @@ public class Main {
 						todosFuncionarios();
 						break;
 					case 3:
+						alterarCadastro();
 						break;
 					case 4:
 						consulta();
@@ -65,7 +67,8 @@ public class Main {
 		
 		for (Employe employe : lista) {
 			if ((employe.getUse().getUsername().equals(username)) && (employe.getUse().getPassword().equals(password))) {
-					userAtual.alterar(employe.getNome());
+				userAtual = employe;
+					//userAtual.alterar(employe.getNome());
 				return true;
 			}
 		}
@@ -125,8 +128,12 @@ public class Main {
 		String username = input.nextLine();
 		System.out.println("Digite sua senha");
 		String senha = input.nextLine();
+		System.out.println("Digite seu cpf");
+		String cpf = input.nextLine();
+		System.out.println("Digite seu telefone");
+		String telefone = input.nextLine();
 		
-		lista.add(new Employe(nome, username, senha));
+		lista.add(new Employe(nome,cpf, username, senha, telefone));
 
 	}
 	
@@ -153,5 +160,31 @@ public class Main {
 			System.out.println(employe);
 			}
 		}
-
+	
+	public static void alterarCadastro() {
+		System.out.println("Digite o ID:");
+		int op = input.nextInt();
+		input.nextLine();
+		int encontrou = -1;
+		for (Employe employe :  lista) {
+			if (employe.getIdentificador() == op) {
+				System.out.println("Encontramos: " + employe.getNome() + ". É este usuário? 1-sim, 2-nao");
+				int op2 = input.nextInt();
+				 input.nextLine();
+				if(op2==1) {
+					System.out.println("Digite seu nome");
+					String nome = input.nextLine();
+					System.out.println("Digite seu username");
+					String username = input.nextLine();
+					System.out.println("Digite sua senha");
+					String senha = input.nextLine();
+					System.out.println("Digite seu cpf");
+					String cpf = input.nextLine();
+					System.out.println("Digite seu telefone");
+					String telefone = input.nextLine();
+					employe.alterar(nome, cpf, username, senha, telefone);  
+				}
+			}
+		}
+	}
 }
