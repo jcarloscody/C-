@@ -19,7 +19,7 @@ public abstract class Comum implements Geral{
 	
 	
 	
-	//obs, situação, contatos
+	//obs, situação
 	
 
 }
