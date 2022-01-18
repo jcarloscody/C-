@@ -93,6 +93,25 @@ SELECT supplier.nome as supplier, id_supplier,  cidade
         INNER JOIN endereco e 
             ON   (supplier.id = e.id_supplier AND cidade = "timbauba");
 
+/*
+SELECT employee.nome as employee, client.nome as client, supplier.nome as supplier, cidade
+    FROM  employee , client, supplier
+        INNER JOIN endereco e 
+            ON   (e.id_supplier = supplier.id  AND 
+            e.id_client = client.id AND e.id_employee = employee.id AND cidade = "timbauba");
+        INNER JOIN endereco ee 
+            ON  ( e)
+        INNER JOIN endereco eee 
+            ON  ( ee);
+
+SELECT endereco.id_employee, endereco.id_client, endereco.id_supplier, employee.nome as employeName, 
+	   client.nome as clientName, supplier.nome as supplierName, cidade
+    FROM  employee , client, supplier, endereco
+        WHERE (endereco.id_supplier = supplier.id  OR
+			  endereco.id_client = client.id OR
+              endereco.id_employee = employee.id) AND 
+              endereco.cidade = "timbauba";
+*/
 
 
 SELECT *
@@ -114,6 +133,9 @@ SELECT *
     FROM  contatos 
         INNER JOIN supplier e 
             ON   id_supplier = e.id;
+
+
+
 
 SELECT *
     FROM  produto 
