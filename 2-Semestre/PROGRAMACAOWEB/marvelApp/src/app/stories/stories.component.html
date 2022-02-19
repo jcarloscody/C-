@@ -1,0 +1,8 @@
+<div fxFlex fxLayout="column">
+    <div fxLayout="row wrap">
+        <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column"
+        *ngFor="let storie of allStories | async" style="padding: 5px;">
+            <app-storie [storie]="storie"></app-storie>
+        </div>
+    </div>
+</div>
