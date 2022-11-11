@@ -1,4 +1,4 @@
-/*#include<iostream>
+#include<iostream>
 #include <string>
 #include <sstream>
 #include <vector>
@@ -9,15 +9,15 @@ stringstream buffer;
 using namespace std;
 
 
-/*int main() {
+int main() {
 
 
 	string nome;
 	string sexo, tecla;
 	int  idade, mes, validadorIdade = 1;
 
-	/*    OBSERVA«√O
-	O BuggyAnalytics possui validaÁıes para entrada de inteiro, porÈm n„o h· validaÁ„o para entrada de apenas number nas vari·veis int
+	/*    OBSERVA√á√ÉO
+	O BuggyAnalytics possui valida√ß√µes para entrada de inteiro, por√©m n√£o h√° valida√ß√£o para entrada de apenas number nas vari√°veis int
 	*/
 
 	/*
@@ -27,61 +27,61 @@ using namespace std;
 	*/
 
 
-	//VARI¡VEIS JANEIRO
-	/* int frequenciaGeralJaneiro = 0, masculinoJaneiro = 0, femininoJaneiro = 0, idadePrimeiraFaseJaneiro = 0, idadeSegundaFaseJaneiro = 0, idadeTerceiraFaseJaneiro = 0,
+	//VARI√ÅVEIS JANEIRO
+	 int frequenciaGeralJaneiro = 0, masculinoJaneiro = 0, femininoJaneiro = 0, idadePrimeiraFaseJaneiro = 0, idadeSegundaFaseJaneiro = 0, idadeTerceiraFaseJaneiro = 0,
 		femininoPrimeiraFaseJaneiro = 0, femininoSegundaFaseJaneiro = 0, femininoTerceiraFaseJaneiro = 0, masculinoPrimeiraFaseJaneiro = 0,
 		masculinoSegundaFaseJaneiro = 0, masculinoTerceiraFaseJaneiro = 0;
-	//VARI¡VEIS FEVEREIRO
+	//VARI√ÅVEIS FEVEREIRO
 	int frequenciaGeralFevereiro = 0, masculinoFevereiro = 0, femininoFevereiro = 0, idadePrimeiraFaseFevereiro = 0, idadeSegundaFaseFevereiro = 0, idadeTerceiraFaseFevereiro = 0,
 		femininoPrimeiraFaseFevereiro = 0, femininoSegundaFaseFevereiro = 0, femininoTerceiraFaseFevereiro = 0, masculinoPrimeiraFaseFevereiro = 0,
 		masculinoSegundaFaseFevereiro = 0, masculinoTerceiraFaseFevereiro = 0;
 
-	//VARI¡VEIS MARCO
+	//VARI√ÅVEIS MARCO
 	int frequenciaGeralMarco = 0, masculinoMarco = 0, femininoMarco = 0, idadePrimeiraFaseMarco = 0, idadeSegundaFaseMarco = 0, idadeTerceiraFaseMarco = 0,
 		femininoPrimeiraFaseMarco = 0, femininoSegundaFaseMarco = 0, femininoTerceiraFaseMarco = 0, masculinoPrimeiraFaseMarco = 0,
 		masculinoSegundaFaseMarco = 0, masculinoTerceiraFaseMarco = 0;
 
-	//VARI¡VEIS ABRIL
+	//VARI√ÅVEIS ABRIL
 	int frequenciaGeralAbril = 0, masculinoAbril = 0, femininoAbril = 0, idadePrimeiraFaseAbril = 0, idadeSegundaFaseAbril = 0, idadeTerceiraFaseAbril = 0,
 		femininoPrimeiraFaseAbril = 0, femininoSegundaFaseAbril = 0, femininoTerceiraFaseAbril = 0, masculinoPrimeiraFaseAbril = 0,
 		masculinoSegundaFaseAbril = 0, masculinoTerceiraFaseAbril = 0;
 
-	//VARI¡VEIS MAIO
+	//VARI√ÅVEIS MAIO
 	int frequenciaGeralMaio = 0, masculinoMaio = 0, femininoMaio = 0, idadePrimeiraFaseMaio = 0, idadeSegundaFaseMaio = 0, idadeTerceiraFaseMaio = 0,
 		femininoPrimeiraFaseMaio = 0, femininoSegundaFaseMaio = 0, femininoTerceiraFaseMaio = 0, masculinoPrimeiraFaseMaio = 0,
 		masculinoSegundaFaseMaio = 0, masculinoTerceiraFaseMaio = 0;
 
-	//VARI¡VEIS JUNHO
+	//VARI√ÅVEIS JUNHO
 	int frequenciaGeralJunho = 0, masculinoJunho = 0, femininoJunho = 0, idadePrimeiraFaseJunho = 0, idadeSegundaFaseJunho = 0, idadeTerceiraFaseJunho = 0,
 		femininoPrimeiraFaseJunho = 0, femininoSegundaFaseJunho = 0, femininoTerceiraFaseJunho = 0, masculinoPrimeiraFaseJunho = 0,
 		masculinoSegundaFaseJunho = 0, masculinoTerceiraFaseJunho = 0;
 
-	//VARI¡VEIS JULHO
+	//VARI√ÅVEIS JULHO
 	int frequenciaGeralJulho = 0, masculinoJulho = 0, femininoJulho = 0, idadePrimeiraFaseJulho = 0, idadeSegundaFaseJulho = 0, idadeTerceiraFaseJulho = 0,
 		femininoPrimeiraFaseJulho = 0, femininoSegundaFaseJulho = 0, femininoTerceiraFaseJulho = 0, masculinoPrimeiraFaseJulho = 0,
 		masculinoSegundaFaseJulho = 0, masculinoTerceiraFaseJulho = 0;
 
-	//VARI¡VEIS AGOSTO
+	//VARI√ÅVEIS AGOSTO
 	int frequenciaGeralAgosto = 0, masculinoAgosto = 0, femininoAgosto = 0, idadePrimeiraFaseAgosto = 0, idadeSegundaFaseAgosto = 0, idadeTerceiraFaseAgosto = 0,
 		femininoPrimeiraFaseAgosto = 0, femininoSegundaFaseAgosto = 0, femininoTerceiraFaseAgosto = 0, masculinoPrimeiraFaseAgosto = 0,
 		masculinoSegundaFaseAgosto = 0, masculinoTerceiraFaseAgosto = 0;
 
-	//VARI¡VEIS SETEMBRO
+	//VARI√ÅVEIS SETEMBRO
 	int frequenciaGeralSetembro = 0, masculinoSetembro = 0, femininoSetembro = 0, idadePrimeiraFaseSetembro = 0, idadeSegundaFaseSetembro = 0, idadeTerceiraFaseSetembro = 0,
 		femininoPrimeiraFaseSetembro = 0, femininoSegundaFaseSetembro = 0, femininoTerceiraFaseSetembro = 0, masculinoPrimeiraFaseSetembro = 0,
 		masculinoSegundaFaseSetembro = 0, masculinoTerceiraFaseSetembro = 0;
 
-	//VARI¡VEIS OUTUBRO
+	//VARI√ÅVEIS OUTUBRO
 	int frequenciaGeralOutubro = 0, masculinoOutubro = 0, femininoOutubro = 0, idadePrimeiraFaseOutubro = 0, idadeSegundaFaseOutubro = 0, idadeTerceiraFaseOutubro = 0,
 		femininoPrimeiraFaseOutubro = 0, femininoSegundaFaseOutubro = 0, femininoTerceiraFaseOutubro = 0, masculinoPrimeiraFaseOutubro = 0,
 		masculinoSegundaFaseOutubro = 0, masculinoTerceiraFaseOutubro = 0;
 
-	//VARI¡VEIS NOVEMBRO
+	//VARI√ÅVEIS NOVEMBRO
 	int frequenciaGeralNovembro = 0, masculinoNovembro = 0, femininoNovembro = 0, idadePrimeiraFaseNovembro = 0, idadeSegundaFaseNovembro = 0, idadeTerceiraFaseNovembro = 0,
 		femininoPrimeiraFaseNovembro = 0, femininoSegundaFaseNovembro = 0, femininoTerceiraFaseNovembro = 0, masculinoPrimeiraFaseNovembro = 0,
 		masculinoSegundaFaseNovembro = 0, masculinoTerceiraFaseNovembro = 0;
 
-	//VARI¡VEIS DEZEMBRO
+	//VARI√ÅVEIS DEZEMBRO
 	int frequenciaGeralDezembro = 0, masculinoDezembro = 0, femininoDezembro = 0, idadePrimeiraFaseDezembro = 0, idadeSegundaFaseDezembro = 0, idadeTerceiraFaseDezembro = 0,
 		femininoPrimeiraFaseDezembro = 0, femininoSegundaFaseDezembro = 0, femininoTerceiraFaseDezembro = 0, masculinoPrimeiraFaseDezembro = 0,
 		masculinoSegundaFaseDezembro = 0, masculinoTerceiraFaseDezembro = 0;
@@ -93,80 +93,63 @@ using namespace std;
 	vector <string> nomesMasculino;
 
 
-	/*AVALIA«√O      ************************************************
+	/*AVALIA√á√ÉO      ************************************************
 
-	QUEST√O 1  -> linha 128
+	QUEST√ÉO 1  -> linha 128
 
-	QUEST√O 2 ->  linha 15 em diante
+	QUEST√ÉO 2 ->  linha 15 em diante
 
-	QUEST√O 3 -> linha 143, 163, 169-176, 16(o uso de string em vez de char j· ajuda impedindo de dar loop se digitar mais de uma letra) e outros
+	QUEST√ÉO 3 -> linha 143, 163, 169-176, 16(o uso de string em vez de char j√° ajuda impedindo de dar loop se digitar mais de uma letra) e outros
 
-	QUEST√O 4 -> linha 137(while), 171(do while), 1169(for)
+	QUEST√ÉO 4 -> linha 137(while), 171(do while), 1169(for)
 
-	QUEST√O 5 -> linha 218
+	QUEST√ÉO 5 -> linha 218
 
-	QUEST√O 6 -> linha 143 e outros
+	QUEST√ÉO 6 -> linha 143 e outros
 
-	QUEST√O 7 -> linha 759 e outros
+	QUEST√ÉO 7 -> linha 759 e outros
 
-	QUEST√O 8 -> linha 163 e outros
+	QUEST√ÉO 8 -> linha 163 e outros
 
-	QUEST√O 9 -> linha 817 e outros
+	QUEST√ÉO 9 -> linha 817 e outros
 
-	QUEST√O 10 -> linha 198 e outros
+	QUEST√ÉO 10 -> linha 198 e outros
 
-	QUEST√O 11 -> espero que esteja sem erros kkkkkkkkkkkkkkkkkk
+	QUEST√ÉO 11 -> espero que esteja sem erros kkkkkkkkkkkkkkkkkk
 
 
 	*******************************************************************************/
 
-	/*cout << "\n\nAlgoritmo desenvolvido por ** JOSUE CARLOS DA SILVA  **";
-
-
+	cout << "\n\nAlgoritmo desenvolvido por ** JOSUE CARLOS DA SILVA  **";
 	cout << "\n";
 	cout << "Bem-vindos ao BuggyAnalytics!\n";
 	cout << "O um dos propositos do BuggyAnalytics e fornecer dados para o analista de dados ou cientista de dados ou areas correlatas.\nA primeiro momento o BuggyAnalytics se centra em tres pilares, ou seja, os dados de idade, sexo e frequencia. A partir\ndestes dados podem ser extraidos quem mais frequenta, quando mais frequenta e outros aspectos. Sob a analise dos dados\nfornecido pelo BuggyAnalytics, possibilitara ao analista tirar conclusoes que podera ajudar a empresa a lucrar mais e diminuir\nos custos, ou seja, os servicos prestados poderao ser mais customizados conforme os grupos de pessoas analisado para aquele\nperiodo, como tambem ter  atitudes preventivas diantes dos picos de demandas e dos periodos de baixa.\n Vamos Comecar o BuggyAnalytics?? \n\n";
 
-
-
-
-
-
-
-
 	while (true) {
 		/*cout<<"Digite s para sair ou quaisquer tecla+enter para continuar:\n";
 		cin>>tecla;*/
-		/*cout << "\nDigite o seu Nome ou s para sair: \n";
+		cout << "\nDigite o seu Nome ou s para sair: \n";
 		cin >> nome;
 
 		if (nome == "s") {
 			break;
 		}
 		else {
-
-
-
-
-
-
-
-
-			/*cout<<"\nDigite o seu Nome: \n";
-			cin>>nome;*/
+			cout<<"\nDigite o seu Nome: \n";
+			cin>>nome;
 
 			//Verificador IDADE - finalidade: verificar range
-			/*while (validadorIdade == 1) {
+			while (validadorIdade == 1) {
 				cout << "Digite a sua idade\n";
 				cin >> idade;
 
-				//verificaÁ„o de MENOR
+				//verifica√ß√£o de MENOR
 				if (idade < 18) {
 					cout << "Menor nao pode entrar!\n";
 					continue;
 				}
 
-				//verifica se a idade È INVALIDA
+				//verifica se a idade √© INVALIDA
 				if (idade > 110) {
 					cout << "Sua idade e invalida!\n";
 					do {
@@ -179,11 +162,10 @@ using namespace std;
 				validadorIdade = 0;
 			}
 			validadorIdade = 1;
-
-
+			
 			cout << "Digite o seu sexo: f-Feminio ou m-Masculino \n";
 			cin >> sexo;
-			//validaÁ„o do SEXO
+			//valida√ß√£o do SEXO
 			if (sexo != "f" && sexo != "m") {
 				cout << "Voce digitou errado! digite f-Feminio ou m-Masculino\n";
 				while (sexo != "f" && sexo != "m") {
@@ -813,8 +795,6 @@ using namespace std;
 	int quadrimestreMJJA = frequenciaGeralMaio + frequenciaGeralJunho + frequenciaGeralJulho + frequenciaGeralAgosto;
 	int quadrimestreSOND = frequenciaGeralSetembro + frequenciaGeralOutubro + frequenciaGeralNovembro + frequenciaGeralDezembro;
 
-
-
 	cout << "\n\n\n *****  FREQUENCIA MEDIDA POR PERIODO (QUADRIMESTRE)\n";
 	if (quadrimestreJFMA > quadrimestreMJJA && quadrimestreJFMA > quadrimestreSOND) {
 		cout << "-->> PICO: Janeiro, Fevereiro, Marco, Abril \n";
@@ -979,7 +959,6 @@ using namespace std;
 
 	cout << "\n\n";
 
-
 	cout << "****   FREQUENCIA FEMININA   *****\n";
 	cout << "Janeiro:   " << femininoJaneiro << "\n";
 	cout << "Fevereiro: " << femininoFevereiro << "\n";
@@ -996,7 +975,6 @@ using namespace std;
 	cout << "TOTAL:     " << femininoTotal << "\n";
 
 	cout << "\n\n";
-
 
 	cout << "****   FREQUENCIA MASCULINA   *****\n";
 	cout << "Janeiro:   " << masculinoJaneiro << "\n";
@@ -1015,7 +993,6 @@ using namespace std;
 
 	cout << "\n\n";
 
-
 	cout << "****   FREQUENCIA POR IDADE (18-29)   *****\n";
 	cout << "Janeiro:   " << idadePrimeiraFaseJaneiro << "\n";
 	cout << "Fevereiro: " << idadePrimeiraFaseFevereiro << "\n";
@@ -1032,7 +1009,6 @@ using namespace std;
 	cout << "TOTAL:     " << idadePrimeiraFaseTotal << "\n";
 
 	cout << "\n\n";
-
 
 	cout << "****   FREQUENCIA POR IDADE (30-49)   *****\n";
 	cout << "Janeiro:   " << idadeSegundaFaseJaneiro << "\n";
@@ -1192,4 +1168,3 @@ using namespace std;
 	system("PAUSE");
 
 }
-*/
